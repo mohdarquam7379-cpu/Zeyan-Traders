@@ -2209,3 +2209,26 @@ gap:28px;
 }
 
 }
+.nav-menu.active{
+
+display:flex;
+
+position:absolute;
+
+top:95px;
+
+left:0;
+
+width:100%;
+
+background:#111;
+
+flex-direction:column;
+
+padding:30px;
+
+gap:25px;
+
+border-top:1px solid rgba(255,255,255,.08);
+
+}
