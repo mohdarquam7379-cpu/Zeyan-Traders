@@ -1765,3 +1765,450 @@ bottom:160px;
 #loader{
     display: none !important;
 }
+/* ==========================================================
+   Zeyan Traders V6.0
+   CSS PART 6 - PREMIUM UI POLISH
+========================================================== */
+
+/* ---------- Navbar ---------- */
+
+.header{
+
+height:95px;
+
+display:flex;
+
+align-items:center;
+
+transition:.4s;
+
+}
+
+.navbar{
+
+gap:40px;
+
+}
+
+.nav-menu{
+
+gap:42px;
+
+}
+
+.nav-menu a{
+
+font-size:17px;
+
+font-weight:600;
+
+}
+
+/* ---------- Logo ---------- */
+
+.logo img{
+
+width:52px;
+
+height:52px;
+
+box-shadow:
+0 0 18px rgba(212,175,55,.35);
+
+}
+
+.logo h2{
+
+font-size:2rem;
+
+line-height:1;
+
+}
+
+.logo span{
+
+font-size:.9rem;
+
+}
+
+/* ---------- Search ---------- */
+
+.search-box{
+
+width:310px;
+
+height:56px;
+
+border-radius:60px;
+
+}
+
+.search-box input{
+
+font-size:15px;
+
+padding-left:22px;
+
+}
+
+.search-box button{
+
+width:58px;
+
+}
+
+/* ---------- Theme Button ---------- */
+
+#themeToggle{
+
+width:54px;
+
+height:54px;
+
+border-radius:50%;
+
+background:#1a1a1a;
+
+}
+
+/* ---------- Hero ---------- */
+
+.hero{
+
+padding-top:170px;
+
+padding-bottom:110px;
+
+}
+
+.hero-content{
+
+gap:90px;
+
+}
+
+.hero-text{
+
+padding-right:30px;
+
+}
+
+.hero-text h1{
+
+font-size:5rem;
+
+line-height:1.08;
+
+letter-spacing:-2px;
+
+margin-bottom:30px;
+
+}
+
+.hero-text p{
+
+font-size:18px;
+
+max-width:620px;
+
+}
+
+/* ---------- Buttons ---------- */
+
+.hero-buttons{
+
+margin-top:40px;
+
+}
+
+.btn{
+
+padding:18px 40px;
+
+font-size:16px;
+
+}
+
+.btn-primary{
+
+box-shadow:
+
+0 12px 35px rgba(212,175,55,.35);
+
+}
+
+.btn-primary:hover{
+
+transform:translateY(-5px);
+
+}
+
+.btn-secondary{
+
+background:transparent;
+
+}
+
+/* ---------- Hero Image ---------- */
+
+.hero-image{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+position:relative;
+
+}
+
+.hero-image::before{
+
+content:"";
+
+position:absolute;
+
+width:430px;
+
+height:430px;
+
+background:
+
+radial-gradient(circle,
+
+rgba(212,175,55,.25),
+
+transparent 70%);
+
+filter:blur(45px);
+
+z-index:-1;
+
+}
+
+.hero-image img{
+
+width:95%;
+
+max-width:620px;
+
+border-radius:30px;
+
+border:3px solid rgba(212,175,55,.28);
+
+box-shadow:
+
+0 35px 80px rgba(0,0,0,.45);
+
+}
+
+/* ---------- Statistics ---------- */
+
+.hero-stats{
+
+margin-top:55px;
+
+gap:60px;
+
+}
+
+.hero-stats h3{
+
+font-size:2.3rem;
+
+}
+
+/* ---------- Section Padding ---------- */
+
+section{
+
+padding:120px 0;
+
+}
+
+/* ---------- Floating Buttons ---------- */
+
+.call-float{
+
+right:28px;
+
+bottom:175px;
+
+width:62px;
+
+height:62px;
+
+}
+
+.whatsapp-float{
+
+right:28px;
+
+bottom:95px;
+
+width:62px;
+
+height:62px;
+
+}
+
+/* ---------- Scroll Top ---------- */
+
+#backToTop{
+
+left:25px;
+
+bottom:28px;
+
+}
+
+/* ---------- Gold Hover ---------- */
+
+.category-card:hover,
+
+.product-card:hover,
+
+.why-card:hover,
+
+.stat-card:hover,
+
+.testimonial-card:hover{
+
+box-shadow:
+
+0 22px 45px rgba(212,175,55,.12);
+
+}
+
+/* ---------- Smooth Image ---------- */
+
+img{
+
+transition:.45s ease;
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media(max-width:1200px){
+
+.hero-text h1{
+
+font-size:4rem;
+
+}
+
+}
+
+@media(max-width:992px){
+
+.header{
+
+height:82px;
+
+}
+
+.hero{
+
+padding-top:120px;
+
+}
+
+.hero-content{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+.hero-stats{
+
+justify-content:center;
+
+}
+
+.hero-image{
+
+margin-top:60px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero-text h1{
+
+font-size:2.9rem;
+
+}
+
+.hero-text p{
+
+font-size:16px;
+
+}
+
+.logo h2{
+
+font-size:1.35rem;
+
+}
+
+.logo span{
+
+font-size:.75rem;
+
+}
+
+.search-box{
+
+display:none;
+
+}
+
+.nav-menu{
+
+display:none;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.hero-text h1{
+
+font-size:2.35rem;
+
+line-height:1.2;
+
+}
+
+.hero{
+
+padding-top:100px;
+
+}
+
+.hero-image img{
+
+width:100%;
+
+}
+
+.hero-stats{
+
+gap:28px;
+
+}
+
+}
