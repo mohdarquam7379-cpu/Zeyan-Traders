@@ -1,9 +1,245 @@
-body{margin:0;font-family:Arial,sans-serif;background:#0d0d0d;color:#fff}
-header{padding:20px;text-align:center;border-bottom:1px solid #b9923f}
-nav a{color:#d9b55a;margin:0 10px;text-decoration:none}
-.hero{padding:80px 20px;text-align:center;background:linear-gradient(#111,#1b1b1b)}
-.btn{background:#c9a34a;color:#000;padding:12px 20px;text-decoration:none;border-radius:6px;font-weight:bold}
-section{padding:40px 20px;max-width:1000px;margin:auto}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px}
-.grid div{border:1px solid #c9a34a;padding:20px;text-align:center;border-radius:8px}
-footer{text-align:center;padding:20px;border-top:1px solid #b9923f;color:#ccc}
+/* ===================================================
+   Zeyan Traders V5.0
+   Luxury Beauty & Salon Wholesale Website
+   =================================================== */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* =========================
+   CSS Variables
+========================= */
+
+:root{
+
+--primary:#d4af37;
+--primary-dark:#b89220;
+
+--black:#0b0b0b;
+--dark:#151515;
+--light:#ffffff;
+
+--text:#d9d9d9;
+--text-dark:#444;
+
+--glass:rgba(255,255,255,.08);
+
+--border:rgba(255,255,255,.12);
+
+--shadow:0 15px 40px rgba(0,0,0,.25);
+
+--radius:18px;
+
+--transition:.35s ease;
+
+}
+
+/* Light Theme */
+
+body.light{
+
+--black:#fafafa;
+
+--dark:#ffffff;
+
+--light:#111111;
+
+--text:#444;
+
+--glass:rgba(0,0,0,.05);
+
+--border:rgba(0,0,0,.08);
+
+}
+
+/* ========================= */
+
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
+font-family:"Poppins",sans-serif;
+
+scroll-behavior:smooth;
+
+}
+
+/* ========================= */
+
+body{
+
+background:var(--black);
+
+color:var(--light);
+
+overflow-x:hidden;
+
+transition:var(--transition);
+
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#111;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:var(--primary);
+
+border-radius:50px;
+
+}
+
+/* Links */
+
+a{
+
+text-decoration:none;
+
+color:inherit;
+
+}
+
+/* Images */
+
+img{
+
+max-width:100%;
+
+display:block;
+
+}
+
+/* Sections */
+
+section{
+
+padding:90px 8%;
+
+}
+
+/* Container */
+
+.container{
+
+max-width:1300px;
+
+margin:auto;
+
+}
+
+/* =========================
+   Buttons
+========================= */
+
+.btn{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+padding:15px 34px;
+
+border-radius:50px;
+
+font-weight:600;
+
+transition:var(--transition);
+
+cursor:pointer;
+
+}
+
+.btn-gold{
+
+background:var(--primary);
+
+color:#111;
+
+}
+
+.btn-gold:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 15px 30px rgba(212,175,55,.35);
+
+}
+
+.btn-outline{
+
+border:2px solid var(--primary);
+
+color:var(--primary);
+
+}
+
+.btn-outline:hover{
+
+background:var(--primary);
+
+color:#111;
+
+}
+
+/* =========================
+Section Heading
+========================= */
+
+.section-title{
+
+text-align:center;
+
+margin-bottom:70px;
+
+}
+
+.section-title span{
+
+color:var(--primary);
+
+font-weight:600;
+
+letter-spacing:2px;
+
+text-transform:uppercase;
+
+}
+
+.section-title h2{
+
+font-size:46px;
+
+margin-top:15px;
+
+}
+
+.section-title p{
+
+margin-top:20px;
+
+color:var(--text);
+
+line-height:1.8;
+
+max-width:750px;
+
+margin-inline:auto;
+
+}
